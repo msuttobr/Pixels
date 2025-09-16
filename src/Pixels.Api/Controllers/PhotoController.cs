@@ -18,6 +18,9 @@ namespace Pixels.Api.Controllers
             _searchSettings = searchSettings.Value;
         }
 
+        /// <summary>
+        /// Busca fotos pelo termo informado, também pode incluir um limite de fotos.
+        /// </summary>
         [HttpGet("search")]
         public async Task<IActionResult> Search([FromQuery] string query, [FromQuery] int? perPage)
         {

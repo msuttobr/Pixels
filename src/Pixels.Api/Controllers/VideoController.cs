@@ -19,6 +19,9 @@ namespace Pixels.Api.Controllers
             _searchSettings = searchSettings.Value;
         }
 
+        /// <summary>
+        /// Busca vídeos pelo termo informado, também pode incluir um limite de vídeos.
+        /// </summary>
         [HttpGet("search")]
         public async Task<IActionResult> Search([FromQuery] string query, [FromQuery] int? perPage)
         {
