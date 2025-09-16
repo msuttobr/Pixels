@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Pixels.Application\Pixels.Application.csproj" />
+    <ProjectReference Include="..\Pixels.Domain\Pixels.Domain.csproj" />
+    <ProjectReference Include="..\Pixels.Infrastructure\Pixels.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
